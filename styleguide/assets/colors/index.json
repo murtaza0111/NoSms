@@ -1,0 +1,53 @@
+{
+  "colors": [
+    {
+      "name": "Purpel Heart",
+      "code": "#6928A9",
+      "for": "Logo Text Color"
+    },
+    {
+      "name": "Blue Purple",
+      "color":"#4F21CF",
+      "for":""
+    },
+    {
+      "name": "Zeus",
+      "code": "#292319",
+      "for": "Word mark subheading"
+    },
+    {
+      "name": "White Smoke",
+      "code": "#F5F5F5",
+      "for": ""
+    },
+    {
+      "name": "Regent Grey",
+      "code": "#8d94a4",
+      "for": ""
+    },
+    {
+      "name": "Grey Chateau",
+      "code": "#9ca9ab",
+      "for": ""
+    },
+    {
+      "name": "Rangoon Green",
+      "code": "#1b1b1b"
+    },
+    {
+      "name": "Dull Brown",
+      "code": "#8d7249",
+      "for": ""
+    },
+    {
+      "name": "White",
+      "code": "#ffffff",
+      "for": ""
+    },
+    {
+      "name": "Black",
+      "code": "#000000",
+      "for": ""
+    }
+  ]
+}
