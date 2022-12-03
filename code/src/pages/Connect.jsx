@@ -31,7 +31,7 @@ const Connect = () => {
   }, [navigate]);
 
   useEffect(() => {
-    const addToCart = () => {
+    const addToFriendsList = () => {
       const items = document.getElementsByClassName("friendsBtn");
       if (items) {
         toggleFriendsList(
@@ -44,7 +44,7 @@ const Connect = () => {
         console.log("Nothing Found");
       }
     };
-    addToCart();
+    addToFriendsList();
   });
   const getUserData = async () => {
     const users = await getUsersFromLocalStorage();
@@ -202,7 +202,12 @@ const Connect = () => {
                                 </button>
                               ) : null;
                             })()
-                          : null}
+                          : ( <button
+                            className="friendsBtn"
+                            data-friend={user.id}
+                          >
+                            Add Friend
+                          </button>)}
                       </div>
                     </div>
                   </article>
