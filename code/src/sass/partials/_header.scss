@@ -1,0 +1,23 @@
+header {
+  width: 100%;
+  padding: 3rem;
+  font-size: 1.8rem;
+  h1 {
+    font-size: 5rem;
+  }
+  .breadcrumb {
+    background: getColor(bredcrum);
+    box-shadow: 0.1rem 0.1rem 0.5rem getColor(purpleHeart);
+    padding: 1rem;
+    border-radius: 1rem;
+    .breadcrumb-item {
+      & a {
+        color: #000000;
+        text-decoration: none;
+        &.active {
+          color: getColor(smokeyGrey);
+        }
+      }
+    }
+  }
+}

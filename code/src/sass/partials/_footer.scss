@@ -1,0 +1,19 @@
+footer {
+    padding-top: 2rem;
+    background-color: getColor(darkIndigo);
+    width: 100%;
+    font-size: 1.8rem;
+    a{
+        border-bottom: none;
+    }
+    a:hover{
+        border-bottom: 0.1rem solid getColor(smokeyGrey);
+    }
+  }
+  
+  @media (max-width: "700px") {
+    footer {
+      position: sticky;
+    }
+  }
+  

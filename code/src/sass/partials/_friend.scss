@@ -1,0 +1,87 @@
+.friends {
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  flex-wrap: wrap;
+  .friend {
+    background-color: getColor(white);
+    box-shadow: 0.1rem 0.1rem 1rem getColor(purpleHeart);
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+    margin: 1rem auto;
+    width: 30rem;
+    height: 30rem;
+    padding: 2rem;
+    border-radius: 2rem;
+    &__header {
+      width: 100%;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      flex-direction: column;
+      &__img {
+        width: 9rem;
+        height: 9rem;
+        border-radius: 50%;
+        img {
+          width: 100%;
+          height: 100%;
+          border-radius: 50%;
+        }
+      }
+    }
+    &__content {
+      width: 100%;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      flex-direction: column;
+      &__title {
+        margin: 1rem auto;
+        text-align: center;
+        h3 {
+          font-size: 2.5rem;
+          margin: 1rem;
+        }
+        p {
+          margin: 1rem;
+          font-size: 1.2rem;
+        }
+      }
+    }
+    &__footer {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+
+      &--status {
+        button {
+          margin: 1rem;
+          padding: 1rem;
+          border-radius: 4rem;
+          width: 10rem;
+          border: none;
+          color: getColor(white);
+          background-color: getColor(purpleHeart);
+        }
+        button:hover {
+          background-color: getColor(darkIndigo);
+          color: getColor(white);
+        }
+      }
+    }
+    &__error {
+      width: 100%;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      h2 {
+        font-size: 3rem;
+        color: getColor(jasper);
+      }
+    }
+  }
+}
