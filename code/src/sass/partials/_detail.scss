@@ -246,10 +246,25 @@
   }
 }
 @media (max-width: 40rem) {
-  .home {
+  .detail {
     &__posts {
       width: 90%;
       margin: auto;
+    }
+    &__sidebar {
+      width: 90%;
+      &__recentPosts {
+        width: 100%;
+        margin: auto;
+        &__content {
+          flex-wrap: wrap;
+          &__item {
+            border: none;
+          width: 100%;
+          margin: auto;
+          }
+        }
+      }
     }
   }
 }
