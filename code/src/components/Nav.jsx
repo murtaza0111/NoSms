@@ -14,7 +14,7 @@ const Nav = ({ isActive }) => {
 
   useEffect(() => {
     (async () => {
-      if (await checkToken(navigate, "/")) {
+      if (await checkToken(navigate, "")) {
         setLoading(true);
       }
     })();
