@@ -227,10 +227,13 @@
   }
 }
 @media (max-width: 40rem) {
-  .home {
-    &__posts {
-      width: 90%;
+  .people {
+    &__main{
+    width: 100%;
+    &__post {
+      width: 100%;
       margin: auto;
     }
+  } 
   }
 }
