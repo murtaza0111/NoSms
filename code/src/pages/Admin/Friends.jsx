@@ -73,12 +73,12 @@ const Friends = () => {
     // setFilteredFriendList(filter);
   };
 
-  const updateFriendRequestStatus = async (e, f, status) => {
+  const updateFriendRequestStatus = async (f, status) => {
     let friends = await getFriendsFromLocalStorage();
     friends = friends.filter(
       (friend) => parseInt(friend.id) !== parseInt(f.id)
     );
-    if (status === "accepted" || status === "rejected") {
+    if (status === "accepted") {
       const singleFriend = { ...f, status };
       friends.push(singleFriend);
       // e.target.innerHTML = status;
@@ -151,7 +151,6 @@ const Friends = () => {
                                         e.preventDefault();
                                         updateFriendRequestStatus(
                                           friend,
-
                                           "cancel"
                                         );
                                       }}
@@ -216,7 +215,7 @@ const Friends = () => {
                                         onClick={(e) => {
                                           e.preventDefault();
                                           updateFriendRequestStatus(
-                                            e,
+                                           
                                             friend,
                                             "accepted"
                                           );
@@ -228,7 +227,7 @@ const Friends = () => {
                                         onClick={(e) => {
                                           e.preventDefault();
                                           updateFriendRequestStatus(
-                                            e,
+                                           
                                             friend,
                                             "rejected"
                                           );
@@ -243,7 +242,7 @@ const Friends = () => {
                                         onClick={(e) => {
                                           e.preventDefault();
                                           updateFriendRequestStatus(
-                                            e,
+                                           
                                             friend,
                                             "cancle"
                                           );
