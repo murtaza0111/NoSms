@@ -35,7 +35,7 @@ git clone https://github.com/murtaza0111/NoSms.git
 ``` 
 2.  Change directory
 ```bash
-cd Final-Project
+cd NoSms
 ```   
 4.  Run this command in terminal
 ```bash
